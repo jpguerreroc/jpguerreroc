@@ -14,6 +14,16 @@ tiempo, estadística oficial y preguntas que terminan en una decisión, no en un
 
 ### Proyectos
 
+**[EE. UU. y el sector externo de Costa Rica, 2015–2025](https://github.com/jpguerreroc/sector-externo-cr-eeuu)**
+¿Costa Rica siente a Estados Unidos por el comercio o por la tasa de la Fed? Tres
+bloques VAR/VECM sobre datos de FRED y del portal público del BCCR. **El canal
+financiero domina al real en las 14 combinaciones de variable y horizonte.** A 24
+meses, la tasa de fondos federales explica el **44,4 %** de la varianza de las
+reservas internacionales y el **43,2 %** del tipo de cambio efectivo real; el ciclo
+industrial estadounidense, 3,3 % y 4,5 %. Pipeline completo: ADF y KPSS marcando
+las filas ambiguas, Engle-Granger y Johansen, causalidad de Granger,
+impulso-respuesta con banda bootstrap y descomposición de varianza.
+
 **[Nowcasting del PIB trimestral de Costa Rica](https://github.com/jpguerreroc/portfolio-data-analytics/tree/main/nowcasting-pib)**
 Estimar el crecimiento del PIB antes de que se publique la cifra oficial, con
 indicadores de coyuntura de la OCDE. El nowcast reduce el error **30,6 %** frente a
@@ -32,26 +42,12 @@ comportamiento real de cada una, incluidas las que fallan en silencio.
 
 ---
 
-### Investigación en curso
-
-**Ciclo económico y política monetaria de EE. UU. sobre el sector externo de Costa Rica, 2015–2025**
-Trabajo Final de Graduación. Pipeline econométrico completo: pruebas de raíz unitaria
-(ADF y KPSS, marcando como ambiguas las filas donde se contradicen), cointegración por
-Engle-Granger y Johansen, estimación VAR/VECM, causalidad de Granger, impulso-respuesta
-con banda bootstrap y descomposición de varianza.
-
-El análisis se parte en un bloque mensual (~130 obs.) y uno trimestral (~44 obs.) por
-potencia estadística: un VAR trimestral de cinco variables sobre 44 observaciones no se
-sostiene.
-
----
-
 ### Herramientas
 
 `Python` · `pandas` · `numpy` · `matplotlib` · `SQL` · `Excel / Power Query` · `Git`
 
-**Métodos:** series de tiempo, modelos de regresión, pruebas de cointegración
-(Engle-Granger, Johansen), análisis de supervivencia.
+**Métodos:** series de tiempo, VAR/VECM, pruebas de cointegración (Engle-Granger,
+Johansen), causalidad de Granger, modelos de regresión, análisis de supervivencia.
 
 ---
 
