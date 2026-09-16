@@ -29,6 +29,15 @@ Unit root tests flagging ambiguous cases, Engle-Granger and Johansen
 cointegration, Granger causality, bootstrapped impulse responses and variance
 decomposition. Reproducible end to end.
 
+**[Data warehouse and quality engine for macro time series](https://github.com/jpguerreroc/warehouse-sector-externo)**
+DuckDB star schema over the panel above, with **proof that moving the data into
+SQL did not alter a single number**: 18 series reconcile against the validated
+Python pipeline. The Central Bank publishes trade figures accumulated within the
+year; deaccumulation is done in SQL with a window partitioned by year and
+reconciles to `5.7e-14`. Seven data-quality checks that return the failing rows,
+not a boolean — 0 errors and 3 warnings on this data, all three genuine
+macroeconomic shocks rather than capture errors.
+
 **[Nowcasting Costa Rica's quarterly GDP](https://github.com/jpguerreroc/portfolio-data-analytics/tree/main/nowcasting-pib)**
 Estimating GDP growth before the official figure is released, using OECD
 short-term indicators. The nowcast cuts the error **30.6 %** against the naive
@@ -97,6 +106,14 @@ reservas internacionales y el **43,2 %** del tipo de cambio efectivo real; el ci
 industrial estadounidense, 3,3 % y 4,5 %. Pipeline completo: ADF y KPSS marcando
 las filas ambiguas, Engle-Granger y Johansen, causalidad de Granger,
 impulso-respuesta con banda bootstrap y descomposición de varianza.
+
+**[Warehouse y motor de calidad para series macro](https://github.com/jpguerreroc/warehouse-sector-externo)**
+Esquema estrella en DuckDB sobre el panel anterior, con **la prueba de que pasar
+los datos a SQL no alteró ni un número**: 18 series reconcilian contra el pipeline
+validado en Python. El BCCR publica el comercio acumulado dentro del año; la
+desacumulación se hace en SQL con una ventana particionada por año y reconcilia a
+`5,7e-14`. Siete chequeos de calidad que devuelven las filas que fallan — 0 errores
+y 3 avisos, y los tres avisos son choques macro reales, no errores de captura.
 
 **[Nowcasting del PIB trimestral de Costa Rica](https://github.com/jpguerreroc/portfolio-data-analytics/tree/main/nowcasting-pib)**
 Estimar el crecimiento del PIB antes de que se publique la cifra oficial, con
