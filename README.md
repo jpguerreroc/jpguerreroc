@@ -1,5 +1,81 @@
 ## José Pablo Guerrero Chaves
 
+**Economist · Data analysis and official statistics · Costa Rica**
+
+*[Español abajo ↓](#-español)*
+
+Bachelor's degree in Economics (Universidad Latina de Costa Rica) and a
+Licentiate in progress. I am currently doing my professional internship at the
+**Central Bank of Costa Rica**, in the Data Analysis and Statistics Division,
+International Accounts Statistics area.
+
+I work at the intersection of applied economics and data analysis: time series,
+official statistics, and questions that end in a decision rather than a table.
+Every figure I report can be traced back to its source, and gaps are declared as
+gaps.
+
+---
+
+### Projects
+
+**[U.S. shocks and Costa Rica's external sector, 2015–2025](https://github.com/jpguerreroc/sector-externo-cr-eeuu)**
+Does Costa Rica feel the United States through trade or through the Fed's policy
+rate? Three VAR/VECM blocks on public data from FRED and the Central Bank of
+Costa Rica. **The financial channel dominates the real one in all 14**
+variable-horizon combinations. At 24 months, the federal funds rate explains
+**44.4 %** of the variance in international reserves and **43.2 %** of the real
+effective exchange rate; the U.S. industrial cycle explains 3.3 % and 4.5 %.
+Unit root tests flagging ambiguous cases, Engle-Granger and Johansen
+cointegration, Granger causality, bootstrapped impulse responses and variance
+decomposition. Reproducible end to end.
+
+**[Nowcasting Costa Rica's quarterly GDP](https://github.com/jpguerreroc/portfolio-data-analytics/tree/main/nowcasting-pib)**
+Estimating GDP growth before the official figure is released, using OECD
+short-term indicators. The nowcast cuts the error **30.6 %** against the naive
+benchmark — but only **6.5 %** against the historical mean, which is the
+demanding one. Both numbers are in the README, along with the R² of 0.154 and
+the fact that the model did not anticipate the 2020 break.
+
+**[Customer churn and lifetime value](https://github.com/jpguerreroc/portfolio-data-analytics/tree/main/churn-supervivencia)**
+Survival analysis on 7,043 customers. Month-to-month contracts churn at
+**42.7 %** against **2.8 %** for two-year contracts, at nearly identical monthly
+fees. Kaplan-Meier estimator implemented from scratch and validated against
+`lifelines` (max difference 4.33e-15).
+
+**[Automated job-posting tracker](https://github.com/jpguerreroc/portfolio-data-analytics/tree/main/buscador-vacantes)**
+Queries public job-board APIs and documents how each one actually behaves —
+including the ones that fail silently.
+
+---
+
+### Tools
+
+`Python` · `pandas` · `numpy` · `statsmodels` · `SQL` · `Power BI` ·
+`Excel / Power Query` · `Git`
+
+**Methods:** time series, VAR/VECM, cointegration tests (Engle-Granger,
+Johansen), Granger causality, regression models, survival analysis.
+
+**Official statistics:** balance of payments (BPM6), OECD Benchmark Definition
+(BD4), foreign direct investment, international accounts.
+
+---
+
+### How I work
+
+- The finding comes first, with a number.
+- Limitations are declared. A result that does not survive scrutiny is a
+  finding, not a failure to hide.
+- Public data only, with reproducible downloads from the code itself.
+
+📍 Costa Rica · Native Spanish, C1 English
+[LinkedIn](https://linkedin.com/in/jpguerreroc) · guerrerochavesjosepablo@gmail.com
+
+---
+---
+
+## 🇨🇷 Español
+
 **Economista · Análisis de datos y estadísticas · Costa Rica**
 
 Bachillerato Universitario en Economía (Universidad Latina de Costa Rica) y
@@ -9,8 +85,6 @@ Estadísticas de Cuentas Internacionales.
 
 Trabajo en la intersección entre economía aplicada y análisis de datos: series de
 tiempo, estadística oficial y preguntas que terminan en una decisión, no en una tabla.
-
----
 
 ### Proyectos
 
@@ -40,16 +114,16 @@ Estimador de Kaplan-Meier implementado a mano y validado contra `lifelines`.
 Automatiza el descubrimiento de vacantes en varias APIs públicas y documenta el
 comportamiento real de cada una, incluidas las que fallan en silencio.
 
----
-
 ### Herramientas
 
-`Python` · `pandas` · `numpy` · `matplotlib` · `SQL` · `Excel / Power Query` · `Git`
+`Python` · `pandas` · `numpy` · `statsmodels` · `SQL` · `Power BI` ·
+`Excel / Power Query` · `Git`
 
 **Métodos:** series de tiempo, VAR/VECM, pruebas de cointegración (Engle-Granger,
 Johansen), causalidad de Granger, modelos de regresión, análisis de supervivencia.
 
----
+**Estadística oficial:** balanza de pagos (MBP6), OCDE Benchmark Definition (BD4),
+inversión extranjera directa, cuentas internacionales.
 
 ### Cómo trabajo
 
@@ -57,8 +131,6 @@ Johansen), causalidad de Granger, modelos de regresión, análisis de superviven
 - Las limitaciones se declaran. Un resultado que no sobrevive al escrutinio es un
   hallazgo, no un fracaso que esconder.
 - Datos públicos, con descarga reproducible desde el propio código.
-
----
 
 📍 Costa Rica · Español nativo, inglés C1
 [LinkedIn](https://linkedin.com/in/jpguerreroc) · guerrerochavesjosepablo@gmail.com
