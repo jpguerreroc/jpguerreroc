@@ -61,4 +61,4 @@ Johansen), causalidad de Granger, modelos de regresión, análisis de superviven
 ---
 
 📍 Costa Rica · Español nativo, inglés C1
-[LinkedIn](https://linkedin.com/in/jpguerreroc) · jose.guerrero7@ulatina.net
+[LinkedIn](https://linkedin.com/in/jpguerreroc) · guerrerochavesjosepablo@gmail.com
