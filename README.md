@@ -18,7 +18,7 @@ gaps.
 
 ### Projects
 
-**[U.S. shocks and Costa Rica's external sector, 2015–2025](https://github.com/jpguerreroc/sector-externo-cr-eeuu)**
+**U.S. shocks and Costa Rica's external sector, 2015–2025** *(private — thesis in progress)*
 Does Costa Rica feel the United States through trade or through the Fed's policy
 rate? Three VAR/VECM blocks on public data from FRED and the Central Bank of
 Costa Rica. **The financial channel dominates the real one in all 14**
@@ -30,7 +30,7 @@ cointegration, Granger causality, bootstrapped impulse responses and variance
 decomposition. Reproducible end to end.
 
 **[Data warehouse and quality engine for macro time series](https://github.com/jpguerreroc/warehouse-sector-externo)**
-DuckDB star schema over the panel above, with **proof that moving the data into
+DuckDB star schema over a macroeconomic panel, with **proof that moving the data into
 SQL did not alter a single number**: 18 series reconcile against the validated
 Python pipeline. The Central Bank publishes trade figures accumulated within the
 year; deaccumulation is done in SQL with a window partitioned by year and
@@ -97,7 +97,7 @@ tiempo, estadística oficial y preguntas que terminan en una decisión, no en un
 
 ### Proyectos
 
-**[EE. UU. y el sector externo de Costa Rica, 2015–2025](https://github.com/jpguerreroc/sector-externo-cr-eeuu)**
+**EE. UU. y el sector externo de Costa Rica, 2015–2025** *(privado — TFG en curso)*
 ¿Costa Rica siente a Estados Unidos por el comercio o por la tasa de la Fed? Tres
 bloques VAR/VECM sobre datos de FRED y del portal público del BCCR. **El canal
 financiero domina al real en las 14 combinaciones de variable y horizonte.** A 24
@@ -108,7 +108,7 @@ las filas ambiguas, Engle-Granger y Johansen, causalidad de Granger,
 impulso-respuesta con banda bootstrap y descomposición de varianza.
 
 **[Warehouse y motor de calidad para series macro](https://github.com/jpguerreroc/warehouse-sector-externo)**
-Esquema estrella en DuckDB sobre el panel anterior, con **la prueba de que pasar
+Esquema estrella en DuckDB sobre un panel macroeconómico, con **la prueba de que pasar
 los datos a SQL no alteró ni un número**: 18 series reconcilian contra el pipeline
 validado en Python. El BCCR publica el comercio acumulado dentro del año; la
 desacumulación se hace en SQL con una ventana particionada por año y reconcilia a
