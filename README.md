@@ -34,7 +34,9 @@ DuckDB star schema over a macroeconomic panel, with **proof that moving the data
 SQL did not alter a single number**: 18 series reconcile against the validated
 Python pipeline. The Central Bank publishes trade figures accumulated within the
 year; deaccumulation is done in SQL with a window partitioned by year and
-reconciles to `5.7e-14`. Seven data-quality checks that return the failing rows,
+reconciles to `5.7e-14`. The transformations also ship as a **dbt** project — same rows, verified with
+`EXCEPT` in both directions — so lineage comes from `ref()` and the tests run
+inside the graph. Seven data-quality checks that return the failing rows,
 not a boolean — 0 errors and 3 warnings on this data, all three genuine
 macroeconomic shocks rather than capture errors.
 
@@ -54,6 +56,17 @@ to **47.9 %**, the Herfindahl index of destinations from 0.160 to **0.248**, and
 harmonized-system chapter 90 (medical and precision instruments) alone accounts for
 **70.5 %** of the entire increase. UN COMTRADE data, with a Power BI model.
 
+**[Diagnostic engine for time-series blocks](https://github.com/jpguerreroc/motor-series)**
+Declare the block in a config file — which series, which transformation, which
+specification — and the engine runs the full battery: ADF and KPSS **flagging where
+they contradict each other**, lag selection across four criteria, Engle-Granger and
+Johansen, and sample slack against the ten-observations-per-parameter rule. What makes
+it useful is that **it warns instead of obeying**: ask for a VECM on series that do not
+cointegrate and it estimates it anyway, with the warning on top of the report. It
+deliberately does not choose the specification, the Cholesky ordering, or what to do
+when the unit-root tests disagree — those are economic calls, and the engine's job is
+to make explicit what each one costs.
+
 **[The naive benchmark is hard to beat, and almost nobody reports it](https://github.com/jpguerreroc/portfolio-data-analytics)**
 Nowcasting Costa Rica's quarterly GDP from OECD short-term indicators. The
 nowcast cuts the error **30.6 %** against repeating last quarter — the benchmark
@@ -67,7 +80,7 @@ the model missed by 8.7 points.
 
 ### Tools
 
-`Python` · `pandas` · `numpy` · `statsmodels` · `SQL` · `DuckDB` · `Power BI` ·
+`Python` · `pandas` · `numpy` · `statsmodels` · `SQL` · `DuckDB` · `dbt` · `Power BI` ·
 `Excel / Power Query` · `Git`
 
 **Methods:** time series, VAR/VECM, cointegration tests (Engle-Granger,
@@ -120,7 +133,9 @@ Esquema estrella en DuckDB sobre un panel macroeconómico, con **la prueba de qu
 los datos a SQL no alteró ni un número**: 18 series reconcilian contra el pipeline
 validado en Python. El BCCR publica el comercio acumulado dentro del año; la
 desacumulación se hace en SQL con una ventana particionada por año y reconcilia a
-`5,7e-14`. Siete chequeos de calidad que devuelven las filas que fallan — 0 errores
+`5,7e-14`. Las transformaciones también están como proyecto **dbt** —mismas filas, verificado
+con `EXCEPT` en ambas direcciones—, así que el linaje sale de `ref()` y las pruebas
+corren dentro del grafo. Siete chequeos de calidad que devuelven las filas que fallan — 0 errores
 y 3 avisos, y los tres avisos son choques macro reales, no errores de captura.
 
 **[Costa Rica y sus socios no reportan el mismo comercio](https://github.com/jpguerreroc/brecha-espejo-cr)**
@@ -140,6 +155,17 @@ el capítulo 90 del sistema armonizado (instrumentos médicos y de precisión)
 explica por sí solo el **70,5 %** de todo el aumento. Datos de UN COMTRADE, con
 modelo en Power BI.
 
+**[Motor de diagnóstico para bloques de series de tiempo](https://github.com/jpguerreroc/motor-series)**
+Se declara el bloque en un archivo de configuración —qué series, qué transformación,
+qué especificación— y el motor corre la batería completa: ADF y KPSS **marcando dónde
+se contradicen**, selección de rezagos por cuatro criterios, Engle-Granger y Johansen,
+y la holgura muestral contra la regla de diez observaciones por parámetro. Lo que lo
+hace útil es que **advierte en vez de obedecer**: si se le pide un VECM sobre series
+que no cointegran, lo estima igual y deja la advertencia arriba del reporte. No decide
+la especificación, ni el orden de Cholesky, ni qué hacer cuando las pruebas de raíz
+unitaria discrepan: son decisiones económicas, y el trabajo del motor es dejar
+explícito lo que cuesta cada una.
+
 **[El referente ingenuo es difícil de vencer, y casi nadie lo reporta](https://github.com/jpguerreroc/portfolio-data-analytics)**
 Nowcasting del PIB trimestral de Costa Rica con indicadores de coyuntura de la
 OCDE. El nowcast reduce el error **30,6 %** frente a repetir el trimestre anterior
@@ -151,7 +177,7 @@ por 8,7 puntos.
 
 ### Herramientas
 
-`Python` · `pandas` · `numpy` · `statsmodels` · `SQL` · `DuckDB` · `Power BI` ·
+`Python` · `pandas` · `numpy` · `statsmodels` · `SQL` · `DuckDB` · `dbt` · `Power BI` ·
 `Excel / Power Query` · `Git`
 
 **Métodos:** series de tiempo, VAR/VECM, pruebas de cointegración (Engle-Granger,
