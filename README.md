@@ -38,28 +38,36 @@ reconciles to `5.7e-14`. Seven data-quality checks that return the failing rows,
 not a boolean — 0 errors and 3 warnings on this data, all three genuine
 macroeconomic shocks rather than capture errors.
 
-**[Nowcasting Costa Rica's quarterly GDP](https://github.com/jpguerreroc/portfolio-data-analytics/tree/main/nowcasting-pib)**
-Estimating GDP growth before the official figure is released, using OECD
-short-term indicators. The nowcast cuts the error **30.6 %** against the naive
-benchmark — but only **6.5 %** against the historical mean, which is the
-demanding one. Both numbers are in the README, along with the R² of 0.154 and
-the fact that the model did not anticipate the 2020 break.
+**[Costa Rica and its partners do not report the same trade](https://github.com/jpguerreroc/brecha-espejo-cr)**
+In 2024 Costa Rica declared **$19.9 bn** in exports; its partners declared importing
+**$34.0 bn** from Costa Rica. The **$14.1 bn** mirror gap is not noise: it holds for
+ten straight years, never drops below 25 %, and grew from 44 % to 71 %. Three
+partners explain half of it, and each one is a different phenomenon — the United
+States a stable **+17.3 %** level shift, China a **+627 %** gap with a standard
+deviation of 396, Belgium a **−37.7 %** gap that is the most stable of all. The
+analysis runs in SQL over DuckDB.
 
-**[Customer churn and lifetime value](https://github.com/jpguerreroc/portfolio-data-analytics/tree/main/churn-supervivencia)**
-Survival analysis on 7,043 customers. Month-to-month contracts churn at
-**42.7 %** against **2.8 %** for two-year contracts, at nearly identical monthly
-fees. Kaplan-Meier estimator implemented from scratch and validated against
-`lifelines` (max difference 4.33e-15).
+**[Costa Rica's trade concentrated, it did not diversify](https://github.com/jpguerreroc/comercio-exterior-cr)**
+Exports more than doubled between 2010 and 2024 — and became far more dependent on
+one country and one product. The share going to the United States rose from 37.4 %
+to **47.9 %**, the Herfindahl index of destinations from 0.160 to **0.248**, and
+harmonized-system chapter 90 (medical and precision instruments) alone accounts for
+**70.5 %** of the entire increase. UN COMTRADE data, with a Power BI model.
 
-**[Automated job-posting tracker](https://github.com/jpguerreroc/portfolio-data-analytics/tree/main/buscador-vacantes)**
-Queries public job-board APIs and documents how each one actually behaves —
-including the ones that fail silently.
+**[The naive benchmark is hard to beat, and almost nobody reports it](https://github.com/jpguerreroc/portfolio-data-analytics)**
+Nowcasting Costa Rica's quarterly GDP from OECD short-term indicators. The
+nowcast cuts the error **30.6 %** against repeating last quarter — the benchmark
+everyone publishes — but only **6.5 %** against the historical mean, which is the
+one that decides whether the model adds anything. An earlier version showed
++13.7 %; excluding 2020 it collapsed to +0.6 %, so the entire result was the
+pandemic. Both numbers are in the README, with the R² of 0.154 and the quarter
+the model missed by 8.7 points.
 
 ---
 
 ### Tools
 
-`Python` · `pandas` · `numpy` · `statsmodels` · `SQL` · `Power BI` ·
+`Python` · `pandas` · `numpy` · `statsmodels` · `SQL` · `DuckDB` · `Power BI` ·
 `Excel / Power Query` · `Git`
 
 **Methods:** time series, VAR/VECM, cointegration tests (Engle-Granger,
@@ -115,25 +123,35 @@ desacumulación se hace en SQL con una ventana particionada por año y reconcili
 `5,7e-14`. Siete chequeos de calidad que devuelven las filas que fallan — 0 errores
 y 3 avisos, y los tres avisos son choques macro reales, no errores de captura.
 
-**[Nowcasting del PIB trimestral de Costa Rica](https://github.com/jpguerreroc/portfolio-data-analytics/tree/main/nowcasting-pib)**
-Estimar el crecimiento del PIB antes de que se publique la cifra oficial, con
-indicadores de coyuntura de la OCDE. El nowcast reduce el error **30,6 %** frente a
-repetir el trimestre anterior — pero solo **6,5 %** frente al promedio histórico, que
-es el referente exigente. Ambos números están en el README, junto con el R² de 0,154
-y el hecho de que el modelo no anticipó la caída de 2020.
+**[Costa Rica y sus socios no reportan el mismo comercio](https://github.com/jpguerreroc/brecha-espejo-cr)**
+En 2024 Costa Rica declaró exportar **$19,9 mm**; sus socios declararon haber
+importado **$34,0 mm**. Los **$14.140 millones** de brecha espejo no son ruido:
+existen los diez años, nunca bajan de 25 % y pasaron de 44 % a 71 %. Tres socios
+explican la mitad y cada uno es un fenómeno distinto — Estados Unidos un desnivel
+estable de **+17,3 %**, China una brecha de **+627 %** con desviación de 396,
+Bélgica una brecha de **−37,7 %** que es la más estable de todas. El análisis
+corre en SQL sobre DuckDB.
 
-**[Churn y valor de vida del cliente](https://github.com/jpguerreroc/portfolio-data-analytics/tree/main/churn-supervivencia)**
-Análisis de supervivencia sobre 7.043 clientes. El contrato mes a mes cancela al
-**42,7 %** contra **2,8 %** del contrato a dos años, con cuota mensual casi idéntica.
-Estimador de Kaplan-Meier implementado a mano y validado contra `lifelines`.
+**[El comercio exterior de Costa Rica se concentró, no se diversificó](https://github.com/jpguerreroc/comercio-exterior-cr)**
+Las exportaciones más que se duplicaron entre 2010 y 2024 — y se volvieron mucho
+más dependientes de un país y de un producto. Lo destinado a Estados Unidos pasó
+de 37,4 % a **47,9 %**, el índice Herfindahl de destinos de 0,160 a **0,248**, y
+el capítulo 90 del sistema armonizado (instrumentos médicos y de precisión)
+explica por sí solo el **70,5 %** de todo el aumento. Datos de UN COMTRADE, con
+modelo en Power BI.
 
-**[Buscador automático de vacantes](https://github.com/jpguerreroc/portfolio-data-analytics/tree/main/buscador-vacantes)**
-Automatiza el descubrimiento de vacantes en varias APIs públicas y documenta el
-comportamiento real de cada una, incluidas las que fallan en silencio.
+**[El referente ingenuo es difícil de vencer, y casi nadie lo reporta](https://github.com/jpguerreroc/portfolio-data-analytics)**
+Nowcasting del PIB trimestral de Costa Rica con indicadores de coyuntura de la
+OCDE. El nowcast reduce el error **30,6 %** frente a repetir el trimestre anterior
+—el referente que todos publican— pero solo **6,5 %** frente al promedio histórico,
+que es el que decide si el modelo aporta algo. Una versión previa daba +13,7 %;
+excluyendo 2020 caía a +0,6 %, o sea que todo el resultado era la pandemia. Ambos
+números están en el README, con el R² de 0,154 y el trimestre que el modelo erró
+por 8,7 puntos.
 
 ### Herramientas
 
-`Python` · `pandas` · `numpy` · `statsmodels` · `SQL` · `Power BI` ·
+`Python` · `pandas` · `numpy` · `statsmodels` · `SQL` · `DuckDB` · `Power BI` ·
 `Excel / Power Query` · `Git`
 
 **Métodos:** series de tiempo, VAR/VECM, pruebas de cointegración (Engle-Granger,
