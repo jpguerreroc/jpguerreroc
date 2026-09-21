@@ -2,7 +2,7 @@
 
 **Economist · Data analysis and official statistics · Costa Rica**
 
-**[pabloguerrerocr.github.io](https://pabloguerrerocr.github.io)** · [LinkedIn](https://www.linkedin.com/in/pabloguerrerocr)
+**[pabloguerrerocr.github.io](https://pabloguerrerocr.github.io)** · [LinkedIn](https://www.linkedin.com/in/pabloguerrerocr) · pabloguerrerocr@gmail.com
 
 *[Español abajo ↓](#-español)*
 
