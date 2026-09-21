@@ -2,6 +2,8 @@
 
 **Economist · Data analysis and official statistics · Costa Rica**
 
+**[pabloguerrerocr.github.io](https://pabloguerrerocr.github.io)** · [LinkedIn](https://www.linkedin.com/in/pabloguerrerocr)
+
 *[Español abajo ↓](#-español)*
 
 Bachelor's degree in Economics (Universidad Latina de Costa Rica) and a
