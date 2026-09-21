@@ -29,7 +29,7 @@ Unit root tests flagging ambiguous cases, Engle-Granger and Johansen
 cointegration, Granger causality, bootstrapped impulse responses and variance
 decomposition. Reproducible end to end.
 
-**[Data warehouse and quality engine for macro time series](https://github.com/jpguerreroc/warehouse-sector-externo)**
+**[Data warehouse and quality engine for macro time series](https://github.com/pabloguerrerocr/warehouse-sector-externo)**
 DuckDB star schema over a macroeconomic panel, with **proof that moving the data into
 SQL did not alter a single number**: 18 series reconcile against the validated
 Python pipeline. The Central Bank publishes trade figures accumulated within the
@@ -40,7 +40,7 @@ inside the graph. Seven data-quality checks that return the failing rows,
 not a boolean — 0 errors and 3 warnings on this data, all three genuine
 macroeconomic shocks rather than capture errors.
 
-**[Costa Rica and its partners do not report the same trade](https://github.com/jpguerreroc/brecha-espejo-cr)**
+**[Costa Rica and its partners do not report the same trade](https://github.com/pabloguerrerocr/brecha-espejo-cr)**
 In 2024 Costa Rica declared **$19.9 bn** in exports; its partners declared importing
 **$34.0 bn** from Costa Rica. The **$14.1 bn** mirror gap is not noise: it holds for
 ten straight years, never drops below 25 %, and grew from 44 % to 71 %. Three
@@ -49,14 +49,14 @@ States a stable **+17.3 %** level shift, China a **+627 %** gap with a standard
 deviation of 396, Belgium a **−37.7 %** gap that is the most stable of all. The
 analysis runs in SQL over DuckDB.
 
-**[Costa Rica's trade concentrated, it did not diversify](https://github.com/jpguerreroc/comercio-exterior-cr)**
+**[Costa Rica's trade concentrated, it did not diversify](https://github.com/pabloguerrerocr/comercio-exterior-cr)**
 Exports more than doubled between 2010 and 2024 — and became far more dependent on
 one country and one product. The share going to the United States rose from 37.4 %
 to **47.9 %**, the Herfindahl index of destinations from 0.160 to **0.248**, and
 harmonized-system chapter 90 (medical and precision instruments) alone accounts for
 **70.5 %** of the entire increase. UN COMTRADE data, with a Power BI model.
 
-**[Diagnostic engine for time-series blocks](https://github.com/jpguerreroc/motor-series)**
+**[Diagnostic engine for time-series blocks](https://github.com/pabloguerrerocr/motor-series)**
 Declare the block in a config file — which series, which transformation, which
 specification — and the engine runs the full battery: ADF and KPSS **flagging where
 they contradict each other**, lag selection across four criteria, Engle-Granger and
@@ -67,7 +67,7 @@ deliberately does not choose the specification, the Cholesky ordering, or what t
 when the unit-root tests disagree — those are economic calls, and the engine's job is
 to make explicit what each one costs.
 
-**[The naive benchmark is hard to beat, and almost nobody reports it](https://github.com/jpguerreroc/portfolio-data-analytics)**
+**[The naive benchmark is hard to beat, and almost nobody reports it](https://github.com/pabloguerrerocr/portfolio-data-analytics)**
 Nowcasting Costa Rica's quarterly GDP from OECD short-term indicators. The
 nowcast cuts the error **30.6 %** against repeating last quarter — the benchmark
 everyone publishes — but only **6.5 %** against the historical mean, which is the
@@ -99,7 +99,7 @@ Johansen), Granger causality, regression models, survival analysis.
 - Public data only, with reproducible downloads from the code itself.
 
 📍 Costa Rica · Native Spanish, C1 English
-[LinkedIn](https://linkedin.com/in/jpguerreroc) · guerrerochavesjosepablo@gmail.com
+[LinkedIn](https://linkedin.com/in/pabloguerrerocr) · guerrerochavesjosepablo@gmail.com
 
 ---
 ---
@@ -128,7 +128,7 @@ industrial estadounidense, 3,3 % y 4,5 %. Pipeline completo: ADF y KPSS marcando
 las filas ambiguas, Engle-Granger y Johansen, causalidad de Granger,
 impulso-respuesta con banda bootstrap y descomposición de varianza.
 
-**[Warehouse y motor de calidad para series macro](https://github.com/jpguerreroc/warehouse-sector-externo)**
+**[Warehouse y motor de calidad para series macro](https://github.com/pabloguerrerocr/warehouse-sector-externo)**
 Esquema estrella en DuckDB sobre un panel macroeconómico, con **la prueba de que pasar
 los datos a SQL no alteró ni un número**: 18 series reconcilian contra el pipeline
 validado en Python. El BCCR publica el comercio acumulado dentro del año; la
@@ -138,7 +138,7 @@ con `EXCEPT` en ambas direcciones—, así que el linaje sale de `ref()` y las p
 corren dentro del grafo. Siete chequeos de calidad que devuelven las filas que fallan — 0 errores
 y 3 avisos, y los tres avisos son choques macro reales, no errores de captura.
 
-**[Costa Rica y sus socios no reportan el mismo comercio](https://github.com/jpguerreroc/brecha-espejo-cr)**
+**[Costa Rica y sus socios no reportan el mismo comercio](https://github.com/pabloguerrerocr/brecha-espejo-cr)**
 En 2024 Costa Rica declaró exportar **$19,9 mm**; sus socios declararon haber
 importado **$34,0 mm**. Los **$14.140 millones** de brecha espejo no son ruido:
 existen los diez años, nunca bajan de 25 % y pasaron de 44 % a 71 %. Tres socios
@@ -147,7 +147,7 @@ estable de **+17,3 %**, China una brecha de **+627 %** con desviación de 396,
 Bélgica una brecha de **−37,7 %** que es la más estable de todas. El análisis
 corre en SQL sobre DuckDB.
 
-**[El comercio exterior de Costa Rica se concentró, no se diversificó](https://github.com/jpguerreroc/comercio-exterior-cr)**
+**[El comercio exterior de Costa Rica se concentró, no se diversificó](https://github.com/pabloguerrerocr/comercio-exterior-cr)**
 Las exportaciones más que se duplicaron entre 2010 y 2024 — y se volvieron mucho
 más dependientes de un país y de un producto. Lo destinado a Estados Unidos pasó
 de 37,4 % a **47,9 %**, el índice Herfindahl de destinos de 0,160 a **0,248**, y
@@ -155,7 +155,7 @@ el capítulo 90 del sistema armonizado (instrumentos médicos y de precisión)
 explica por sí solo el **70,5 %** de todo el aumento. Datos de UN COMTRADE, con
 modelo en Power BI.
 
-**[Motor de diagnóstico para bloques de series de tiempo](https://github.com/jpguerreroc/motor-series)**
+**[Motor de diagnóstico para bloques de series de tiempo](https://github.com/pabloguerrerocr/motor-series)**
 Se declara el bloque en un archivo de configuración —qué series, qué transformación,
 qué especificación— y el motor corre la batería completa: ADF y KPSS **marcando dónde
 se contradicen**, selección de rezagos por cuatro criterios, Engle-Granger y Johansen,
@@ -166,7 +166,7 @@ la especificación, ni el orden de Cholesky, ni qué hacer cuando las pruebas de
 unitaria discrepan: son decisiones económicas, y el trabajo del motor es dejar
 explícito lo que cuesta cada una.
 
-**[El referente ingenuo es difícil de vencer, y casi nadie lo reporta](https://github.com/jpguerreroc/portfolio-data-analytics)**
+**[El referente ingenuo es difícil de vencer, y casi nadie lo reporta](https://github.com/pabloguerrerocr/portfolio-data-analytics)**
 Nowcasting del PIB trimestral de Costa Rica con indicadores de coyuntura de la
 OCDE. El nowcast reduce el error **30,6 %** frente a repetir el trimestre anterior
 —el referente que todos publican— pero solo **6,5 %** frente al promedio histórico,
@@ -194,4 +194,4 @@ inversión extranjera directa, cuentas internacionales.
 - Datos públicos, con descarga reproducible desde el propio código.
 
 📍 Costa Rica · Español nativo, inglés C1
-[LinkedIn](https://linkedin.com/in/jpguerreroc) · guerrerochavesjosepablo@gmail.com
+[LinkedIn](https://linkedin.com/in/pabloguerrerocr) · guerrerochavesjosepablo@gmail.com
