@@ -86,7 +86,7 @@ the model missed by 8.7 points.
 `Excel / Power Query` · `Git`
 
 **Methods:** time series, VAR/VECM, cointegration tests (Engle-Granger,
-Johansen), Granger causality, regression models, survival analysis.
+Johansen), Granger causality, regression models.
 
 **Official statistics:** balance of payments (BPM6), OECD Benchmark Definition
 (BD4), foreign direct investment, international accounts.
@@ -101,7 +101,7 @@ Johansen), Granger causality, regression models, survival analysis.
 - Public data only, with reproducible downloads from the code itself.
 
 📍 Costa Rica · Native Spanish, C1 English
-[LinkedIn](https://linkedin.com/in/pabloguerrerocr) · guerrerochavesjosepablo@gmail.com
+[LinkedIn](https://linkedin.com/in/pabloguerrerocr) · pabloguerrerocr@gmail.com
 
 ---
 ---
@@ -183,7 +183,7 @@ por 8,7 puntos.
 `Excel / Power Query` · `Git`
 
 **Métodos:** series de tiempo, VAR/VECM, pruebas de cointegración (Engle-Granger,
-Johansen), causalidad de Granger, modelos de regresión, análisis de supervivencia.
+Johansen), causalidad de Granger, modelos de regresión.
 
 **Estadística oficial:** balanza de pagos (MBP6), OCDE Benchmark Definition (BD4),
 inversión extranjera directa, cuentas internacionales.
@@ -196,4 +196,4 @@ inversión extranjera directa, cuentas internacionales.
 - Datos públicos, con descarga reproducible desde el propio código.
 
 📍 Costa Rica · Español nativo, inglés C1
-[LinkedIn](https://linkedin.com/in/pabloguerrerocr) · guerrerochavesjosepablo@gmail.com
+[LinkedIn](https://linkedin.com/in/pabloguerrerocr) · pabloguerrerocr@gmail.com
